@@ -110,7 +110,7 @@
   },
 
   {
-    "question": "Uzupełnij poniższy kod aplikacji Java ME dotyczący obsługi zdarzeń - ustawienia słuchacza i obsługi jakiegoś polecenia (klawisza) dla obiektu ekranu typu JakiśTypEkranu. Słuchaczem jest ta sama klasa. <br> <br> <code> javastartApp(){ <br> <br> JakiśTypEkranu zmienna1 = new JakiśTypEkranu(...); <br> <br> Command zmienna2 = new Command(...);____________.setCommandListener(this); <br> <br> zmienna1.__________(zmienna2);...}",
+    "question": "Uzupełnij poniższy kod aplikacji Java ME dotyczący obsługi zdarzeń - ustawienia słuchacza i obsługi jakiegoś polecenia (klawisza) dla obiektu ekranu typu JakiśTypEkranu. Słuchaczem jest ta sama klasa. <br> <br> <code> javastartApp(){ <br> <br> JakiśTypEkranu zmienna1 = new JakiśTypEkranu(...); <br> <br> Command zmienna2 = new Command(...); <br> <br> ____________.setCommandListener(this); <br> <br> zmienna1.__________(zmienna2);...}",
     "answer": "zmienna1 addCommand"
   },
 
