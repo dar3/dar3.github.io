@@ -126,7 +126,7 @@
 
   {
     "question": "Co trzeba dać, aby opcja pojawiła się na toolbarze?",
-    "answer": "showAsAction"
+    "answer": "showAsAction w XML wewnątrz węzła"
   },
 
   {
@@ -136,7 +136,7 @@
 
   {
     "question": "Który obiekt nie wymaga adaptera widoku?",
-    "answer": "Checkbox"
+    "answer": "CheckBox"
   },
 
   {
