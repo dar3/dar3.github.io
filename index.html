@@ -69,10 +69,26 @@
 
       function showAnswer(index, correctAnswer) {
         const resultDiv = document.getElementById(`result-${index}`);
-        resultDiv.innerHTML = `<span style='color: blue;'> ${correctAnswer}</span>`;
+        // resultDiv.innerHTML = `<span style='color: blue;'> ${correctAnswer}</span>`;
+        resultDiv.innerHTML = `<span style='color: blue;'>${escapeHtml(
+          correctAnswer
+        )}</span>`;
       }
 
       window.onload = loadQuestions;
+
+      function escapeHtml(str) {
+        return str.replace(/[&<>"']/g, function (match) {
+          const entityMap = {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&apos;",
+          };
+          return entityMap[match];
+        });
+      }
     </script>
   </body>
 </html>
