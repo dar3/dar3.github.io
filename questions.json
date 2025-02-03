@@ -5,7 +5,7 @@
   },
 
   {
-    "question": "Implementujesz fragment z przesuwnymi widokami (np. obrazkami) z użyciem <b> ViewPager2 </b>. Definiujesz dla niego odpowiedni adapter <b> MyFragAdapter. </b> <br> <br> Uzupełnij kod Kotlin wymaganej metody/funkcji adaptera, która generuje widok wyświetlania. <br> <br> (wykropkowane oznacza, że w tym miejscu jest odpowiedni kod) <br> <br> <code> class MyFragAdapter(...) : ... <br><br> { <br> <br> fun [pole] (num: Int) : Fragment { <br> <br> return AFragmentWithImage.[pole] (num) <br> <br> } <br><br>}",
+    "question": "Implementujesz fragment z przesuwnymi widokami (np. obrazkami) z użyciem <b> ViewPager2 </b>. Definiujesz dla niego odpowiedni adapter <b> MyFragAdapter. </b> <br> <br> Uzupełnij kod Kotlin wymaganej metody/funkcji adaptera, która generuje widok wyświetlania. <br> <br> (wykropkowane oznacza, że w tym miejscu jest odpowiedni kod) <br> <br> <code> class MyFragAdapter(...) : ... <br><br> { <br> <br> fun [pole] (num: Int) : Fragment { <br> <br> return AFragmentWithImage.[pole] (num) <br> <br> } <br><br>} </code>",
     "answer": "createFragment newInstance"
   },
 
@@ -35,12 +35,12 @@
   },
 
   {
-    "question": "Jaką metodę trzeba użyć jako pierwszą w celu zaimplementowania w aktywności funkcji uzyskania uprawnienia wrażliwego (risky permission)? <br> <br> Wpisz nazwę bez zadnych typów, parametrów,...",
+    "question": "Jaką metodę trzeba użyć jako pierwszą w celu zaimplementowania w aktywności funkcji uzyskania uprawnienia wrażliwego (risky permission)? <br> <br> Wpisz nazwę bez żadnych typów, parametrów,...",
     "answer": "requestPermissions"
   },
 
   {
-    "question": "W aplikacji systemu Android tworzysz intencję abc, za pomocą której uruchamiasz standardowym kontraktem inną swoją aktywność poprzez akcję ACTION VIEW, przekazując jej dane xyz. <br> <br> Używasz Result API - tzn. rejestracja słuchacza (kod wykropkowany) definiowanym kontraktem i użycie launcher'a. Uzupełnij kod realizujący te działanie. (wykropkowania oznaczają odpowiedni kod - skrót) <br <br> <code> var myL = registerForActivityResult(ActivityResultContracts.[pole]()) {...} <br> <br> var abc:Intent = Intent(Intent.ACTION_VIEW) <br> <br> abc.setData(Uri.[pole](xyz)) <br> <br> [pole].launch(abc)",
+    "question": "W aplikacji systemu Android tworzysz intencję <b>abc</b>, za pomocą której uruchamiasz standardowym kontraktem inną swoją aktywność poprzez akcję <b>ACTION_VIEW</b>, przekazując jej dane <b>xyz.</b> <br> <br> Używasz Result API - tzn. rejestracja słuchacza (kod wykropkowany) definiowanym kontraktem i użycie launcher'a. Uzupełnij kod realizujący te działanie. (wykropkowania oznaczają odpowiedni kod - skrót) <br> <br> <code> var myL = registerForActivityResult(ActivityResultContracts.[pole]()) {...} <br> <br> var abc:Intent = Intent(Intent.ACTION_VIEW) <br> <br> abc.setData(Uri.[pole](xyz)) <br> <br> [pole].launch(abc) </code>",
     "answer": "StartActivityForResult parse myL"
   },
 
@@ -65,7 +65,7 @@
   },
 
   {
-    "question": "Podaj nazwy metod, które przy uruchamianiu aktywności w systemie Android są wykonywane dla fragmentu w tej aktywności. Podaj tylko te metody, które nie występują dla aktywności. <br> <br> Uwagi: właściwa kolejność jest najwyżej oceniana  podać same nazwy, bez nawiasów i bez parametrów",
+    "question": "Podaj nazwy metod, które przy uruchamianiu aktywności w systemie Android są wykonywane dla fragmentu w tej aktywności. Podaj tylko te metody, które <b>nie występują</b> dla aktywności. <br> <br> Uwagi: właściwa kolejność jest najwyżej oceniana  podać same nazwy, bez nawiasów i bez parametrów",
     "answer": "onAttach onCreateView onViewCreated"
   },
 
@@ -90,32 +90,32 @@
   },
 
   {
-    "question": "W projekcie aplikacji, w pliku .gradle jest zdefiniowana własność viewBinding=true. <br> <br> Aktywność ma layout zdefiniowany w pliku activity_photo.xml. Jaką nazwę ma klasa obiektu zawierająca referencje do elementów ekranu tej aktywności?",
+    "question": "W projekcie aplikacji, w pliku .gradle jest zdefiniowana własność <b>viewBinding = true</b>. <br> <br> Aktywność ma layout zdefiniowany w pliku <b>activity_photo.xml.</b> Jaką nazwę ma klasa obiektu zawierająca referencje do elementów ekranu tej aktywności?",
     "answer": "ActivityPhotoBinding"
   },
 
   {
-    "question": "W projekcie w pliku .gradle jest zdefiniowana własność viewBinding=true. <br><br> W układzie aktywności (layout) masz obiekt przycisku (Button) o identyfikatorze my_but_1. <br> <br> W metodzie onCreate() tworzysz zmienną do obiektu: var myvb = ActivityMainBinding.inflate(...) <br> <br> Jak odwołasz się do przycisku? Uzupełnij linię kodu funkcji onCreate poniżej:",
+    "question": "W projekcie w pliku .gradle jest zdefiniowana własność <b>viewBinding = true</b>. <br><br> W układzie aktywności (layout) masz obiekt przycisku (Button) o identyfikatorze <b>my_but_1</b>. <br> <br> W metodzie <code> onCreate() </code> tworzysz zmienną do obiektu: <code> <br><br>var myvb = ActivityMainBinding.inflate(...) </code> <br> <br> Jak odwołasz się do przycisku? Uzupełnij linię kodu funkcji onCreate poniżej:",
     "answer": "myvb.myBut1"
   },
 
   {
-    "question": "Podaj nazwy metod, które w aktywności są wykorzystywane przy działaniach, które trzeba podjąć, jeśli inna aktywność przechodzi na pierwszy plan na ekranie: (podaj nazwy metod bez nawiasów) <br> <br> A. Gdy schodzi z pierwszego planu - metoda:____ <br> <br> B. Gdy wraca na pierwszy plan metoda: ____",
+    "question": "Podaj nazwy metod, które w aktywności są wykorzystywane przy działaniach, które trzeba podjąć, jeśli inna aktywność przechodzi na pierwszy plan na ekranie: (podaj nazwy metod bez nawiasów) <br><br> A. Gdy schodzi z pierwszego planu - metoda:____ <br><br> B. Gdy wraca na pierwszy plan metoda: ____",
     "answer": "onPause onResume"
   },
 
   {
-    "question": "Dla aktywności Aaa w aplikacji Android masz zdefiniowany układ graficzny w pliku activity_aaa.xml i umieszczasz w nim widok typu TextView o identyfikatorze txt1. <br> <br> Uzupełnij kod, który ustawia i wyświetla aktywność oraz wypełnia tekstem ten widok. <br><br> <code> onCreate(...) { setContentView(__________.activity_aaa); val var1: TextView = __________(R.id.txt1); var1.setText(...)} </code>",
+    "question": "Dla aktywności Aaa w aplikacji Android masz zdefiniowany układ graficzny w pliku <b>activity_aaa.xml</b> i umieszczasz w nim widok typu TextView o identyfikatorze <b>txt1.</b> <br> <br> Uzupełnij kod, który ustawia i wyświetla aktywność oraz wypełnia tekstem ten widok. <br><br> <code> onCreate(...) { setContentView(__________.activity_aaa); <br> <br> val var1: TextView = ______(R.id.txt1); <br><br> var1.setText(...)} </code>",
     "answer": "R.layout findViewById"
   },
 
   {
-    "question": "Uzupełnij poniższy kod aplikacji Java ME dotyczący obsługi zdarzeń - ustawienia słuchacza i obsługi jakiegoś polecenia (klawisza) dla obiektu ekranu typu JakiśTypEkranu. Słuchaczem jest ta sama klasa. <br> <br> <code> javastartApp(){ <br> <br> JakiśTypEkranu zmienna1 = new JakiśTypEkranu(...); <br> <br> Command zmienna2 = new Command(...); <br> <br> ____________.setCommandListener(this); <br> <br> zmienna1.__________(zmienna2);...}",
+    "question": "Uzupełnij poniższy kod aplikacji Java ME dotyczący obsługi zdarzeń - ustawienia słuchacza i obsługi jakiegoś polecenia (klawisza) dla obiektu ekranu typu JakiśTypEkranu. Słuchaczem jest ta sama klasa. <br> <br> <code> javastartApp(){ <br> <br> JakiśTypEkranu zmienna1 = new JakiśTypEkranu(...); <br> <br> Command zmienna2 = new Command(...); <br> <br> ____________.setCommandListener(this); <br> <br> zmienna1.__________(zmienna2);...} </code>",
     "answer": "zmienna1 addCommand"
   },
 
   {
-    "question": "W aplikacji systemu Android tworzysz intencję iii, za pomocą której uruchamiasz inną aktywność poprzez akcję ACTION_EDIT, przekazując jej dane ddd. <br><br> Druga aktywność ma zwracać dane aktywności wywołującej ją. Uzupełnij kod Java realizujący te działanie: <br> <br>  <code>{ ... Intent iii = new __________(Intent.ACTION_EDIT); <br> <br> iii.setData(_________.parse(ddd)); <br> <br> __________(iii); } </code>",
+    "question": "W aplikacji systemu Android tworzysz intencję <b>iii</b>, za pomocą której uruchamiasz inną aktywność poprzez akcję <b>ACTION_EDIT</b>, przekazując jej dane ddd. <br><br> Druga aktywność ma zwracać dane aktywności wywołującej ją. Uzupełnij kod Java realizujący te działanie: <br> <br>  <code>{ ... Intent iii = new __________(Intent.ACTION_EDIT); <br> <br> iii.setData(_________.parse(ddd)); <br> <br> __________(iii); } </code>",
     "answer": "Intent Uri startActivityForResult"
   },
 
